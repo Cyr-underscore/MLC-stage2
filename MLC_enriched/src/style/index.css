@@ -1,0 +1,107 @@
+:root{
+  --main : #403d39;
+  --patient-table: #8b8c89;
+  --patient-table-dark: #757673;
+  --header: #dce1e2;
+  --background: #edf2fb;
+  --reset-button: #bfc0c0;
+  --table-background: #f6fcff;
+  --table-background-alt: #e8e8e8;
+  --prediction-background: #f0f0f0;
+  --patient-border: #4a5653;
+
+  --main-80: color-mix(in srgb, transparent, var(--main) 80%);
+  --reset-button-80: color-mix(in srgb, transparent, var(--reset-button) 80%);
+  --patient-table-80: color-mix(in srgb, transparent, var(--patient-table) 80%);
+  --header-95: color-mix(in srgb, transparent, var(--header) 95%);
+  --header-70: color-mix(in srgb, transparent, var(--header) 70%);
+
+  --orange: #b4612A;
+  --red: #e01818;
+  --orange-80: rgba(180, 97, 42, 0.8);
+  --sand: rgba(207, 198, 184, 1);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  height: calc(100% - 135px);
+  padding: 25px;
+}
+
+.data-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.step0,
+.step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  background-color: var(--prediction-background);
+  padding: 1rem;
+  border: 1px solid var(--prediction-background);
+  border-radius: 5px;
+}
+
+.button-step {
+  background-color: var(--main-80);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-step:hover {
+  background-color: var(--main);
+}
+
+.step1-1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.error-message {
+  margin: 30px;
+  font-size: 14px;
+}
+
+.final-decision-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.final-decision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  background-color: var(--main);
+  padding: 1rem;
+  border: 1px solid var(--main);
+  border-radius: 5px;
+  color: var(--sand);
+}

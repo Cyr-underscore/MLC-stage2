@@ -1,0 +1,332 @@
+,label
+comorb_CKD,Moderate to severe CKD
+comorb_COPD,COPD
+comorb_CVA,CVA or TIA
+comorb_diabetes1,Uncomplicated diabetes mellitus
+comorb_infarct,Myocardial infarction
+comorb_met,Metastasis
+comorb_met_local_lung,Metastasis
+comorb_met_lung,Metastasis
+comorb_vascular,Peripheral vascular disease
+diag_DC18,Kræft i tyktarmen
+diag_DC34,Kræft i bronkier og lunge
+diag_DC71,Kræft i hjernen
+diag_DC77,Metastaser og ikke nærmere specificeret kræft i lymfeknuder
+diag_DC78,Metastaser i åndedrætsorganer og fordøjelsessystemet
+diag_DC787,Metastase i leveren
+diag_DC79,Metastaser i andre specificerede lokalisationer
+diag_DC793,Metastase i hjernen eller hjernehinder
+diag_DC795,Metastase i knogle eller knoglemarven
+diag_DC80,Ikke nærmere specificeret kræft (ukendt primærtumor)
+side_effect_anemia,Anemia
+side_effect_bact_inf,Bacterial infection
+side_effect_cogn_pb,Cognitive problem
+side_effect_constip,Constipation
+side_effect_diarrhea,Diarrhea
+side_effect_fatigue,Fatigue
+side_effect_nausea,Nausea
+side_effect_neutropenia,Neutropenia
+side_effect_pain,Pain
+pato_F29215,ALK negativ
+pato_FE13C1,EGFR genstatus normal
+pato_FE13CA,EGFR genmutation p.Leu858Arg
+pato_FE13CK,EGFR gendeletion exon 19
+pato_FE13E1,BRAF genstatus normal
+pato_M40000,inflammation
+pato_M41000,akut inflammation
+pato_M42100,akut og kronisk inflammation
+pato_M43000,kronisk inflammation
+pato_M49000,fibrose
+pato_M54000,nekrose
+pato_M55770,aflejring af kulstøv
+pato_M69700,atypiske celler
+pato_M69760,malignitetssuspekte celler
+pato_M72000,hyperplasi
+pato_M73220,planocellulær metaplasi
+pato_M74009,dysplasi
+pato_M74B09,moderat dysplasi
+pato_M77810,sinushistiocytose
+pato_M80013,maligne tumorceller
+pato_M80103,karcinom
+pato_M80106,"metastase, karcinom"
+pato_M80133,storcellet neuroendokrint karcinom
+pato_M80136,"metastase, storcellet neuroendokrint karcinom"
+pato_M80193,ikkesmåcellet karcinom
+pato_M80196,"metastase, ikkesmåcellet karcinom"
+pato_M80413,småcellet karcinom
+pato_M80416,"metastase, småcellet karcinom"
+pato_M80702,planocellulært karcinom in situ
+pato_M80703,planocellulært karcinom
+pato_M80706,"metastase, planocellulært karcinom"
+pato_M81403,adenokarcinom
+pato_M81404,"adenokarcinom, direkte spredning"
+pato_M81406,"metastase, adenokarcinom"
+pato_M81409,"adenokarcinom, usikkert om primært eller metastase"
+pato_M814A0,low grade neoplasi
+pato_M82110,tubulært adenom
+pato_M82466,"metastase, neuroendokrint karcinom"
+pato_ÆF1830,pT1
+pato_ÆF1831,pT1a
+pato_ÆF1840,pT2
+pato_ÆF1841,pT2a
+pato_ÆF1850,pT3
+pato_ÆF1900,pN0
+pato_ÆF1910,pN1
+pato_ÆF1920,pN2
+pato_ÆF2050,pMx
+pato_ÆF4100,udgangspunkt i lunge
+pato_ÆF4999,udgangspunkt ukendt
+pato_ÆKPA00,PD-L1 positivitet <1%
+pato_ÆKPA15,PD-L1 positivitet > 1% og <50%
+pato_ÆKPA50,PD-L1 positivitet >= 50%
+pato_ÆXXX39,højre
+pato_ÆXXX3X,venstre
+pato_ÆYYY00,obs. pro
+pato_ÆYYYD3,lav differentieringsgrad
+blood_test_NPU01349,Basophilocytes i × 10<sup>9</sup>/L
+blood_test_NPU01349_diff,Basophilocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU01370,Bilirubins i µmol/L
+blood_test_NPU01370_diff,Bilirubins i µmol/L (difference)
+blood_test_NPU01443,Calcium i mmol/L
+blood_test_NPU01443_diff,Calcium i mmol/L (difference)
+blood_test_NPU01459,Carbamide i mmol/L
+blood_test_NPU01459_diff,Carbamide i mmol/L (difference)
+blood_test_NPU01470,Carbon dioxide i kPa
+blood_test_NPU01470_diff,Carbon dioxide i kPa (difference)
+blood_test_NPU01472,Carbon dioxide i mmol/L
+blood_test_NPU01472_diff,Carbon dioxide i mmol/L (difference)
+blood_test_NPU01566,Cholesterol+ester i mmol/L
+blood_test_NPU01566_diff,Cholesterol+ester i mmol/L (difference)
+blood_test_NPU01567,"Cholesterol+ester, in HDL i mmol/L"
+blood_test_NPU01567_diff,"Cholesterol+ester, in HDL i mmol/L (difference)"
+blood_test_NPU01568,"Cholesterol+ester, in LDL i mmol/L"
+blood_test_NPU01568_diff,"Cholesterol+ester, in LDL i mmol/L (difference)"
+blood_test_NPU01685,"Coagulation, tissue factor-induced"
+blood_test_NPU01685_diff,"Coagulation, tissue factor-induced (difference)"
+blood_test_NPU01933,Eosinophilocytes i × 10<sup>9</sup>/L
+blood_test_NPU01933_diff,Eosinophilocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU01944,Erythrocytes i fL
+blood_test_NPU01944_diff,Erythrocytes i fL (difference)
+blood_test_NPU01961,Erythrocytes
+blood_test_NPU01961_diff,Erythrocytes (difference)
+blood_test_NPU02192,Glucose i mmol/L
+blood_test_NPU02192_diff,Glucose i mmol/L (difference)
+blood_test_NPU02319,Haemoglobin i mmol/L
+blood_test_NPU02319_diff,Haemoglobin i mmol/L (difference)
+blood_test_NPU02321,Haemoglobin i mmol/L
+blood_test_NPU02321_diff,Haemoglobin i mmol/L (difference)
+blood_test_NPU02409,Hydrogen carbonate i mmol/L
+blood_test_NPU02409_diff,Hydrogen carbonate i mmol/L (difference)
+blood_test_NPU02593,Leukocytes i × 10<sup>9</sup>/L
+blood_test_NPU02593_diff,Leukocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU02636,Lymphocytes i × 10<sup>9</sup>/L
+blood_test_NPU02636_diff,Lymphocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU02647,Magnesium i mmol/L
+blood_test_NPU02647_diff,Magnesium i mmol/L (difference)
+blood_test_NPU02840,Monocytes i × 10<sup>9</sup>/L
+blood_test_NPU02840_diff,Monocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU02902,Neutrophilocytes i × 10<sup>9</sup>/L
+blood_test_NPU02902_diff,Neutrophilocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU03011,Oxygen
+blood_test_NPU03011_diff,Oxygen (difference)
+blood_test_NPU03096,Phosphate(P; inorganic) i mmol/L
+blood_test_NPU03096_diff,Phosphate(P; inorganic) i mmol/L (difference)
+blood_test_NPU03230,Potassium ion i mmol/L
+blood_test_NPU03230_diff,Potassium ion i mmol/L (difference)
+blood_test_NPU03429,Sodium ion i mmol/L
+blood_test_NPU03429_diff,Sodium ion i mmol/L (difference)
+blood_test_NPU03568,Thrombocytes i × 10<sup>9</sup>/L
+blood_test_NPU03568_diff,Thrombocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU03577,Thyrotropin i × 10<sup>-3</sup> IU/L
+blood_test_NPU03577_diff,Thyrotropin i × 10<sup>-3</sup> IU/L (difference)
+blood_test_NPU03620,Triglyceride i mmol/L
+blood_test_NPU03620_diff,Triglyceride i mmol/L (difference)
+blood_test_NPU03688,Urate i mmol/L
+blood_test_NPU03688_diff,Urate i mmol/L (difference)
+blood_test_NPU03943,Lactate i mmol/L
+blood_test_NPU03943_diff,Lactate i mmol/L (difference)
+blood_test_NPU04169,Calcium i mmol/L
+blood_test_NPU04169_diff,Calcium i mmol/L (difference)
+blood_test_NPU08977,Oxygen i kPa
+blood_test_NPU08977_diff,Oxygen i kPa (difference)
+blood_test_NPU12474,Hydrogen ion
+blood_test_NPU12474_diff,Hydrogen ion (difference)
+blood_test_NPU18016,Creatininium i µmol/L
+blood_test_NPU18016_diff,Creatininium i µmol/L (difference)
+blood_test_NPU18415,Anion gap(incl. K+) i mmol/L
+blood_test_NPU18415_diff,Anion gap(incl. K+) i mmol/L (difference)
+blood_test_NPU19651,Alanine transaminase i U/L
+blood_test_NPU19651_diff,Alanine transaminase i U/L (difference)
+blood_test_NPU19655,Alkaline phosphatase i U/l
+blood_test_NPU19655_diff,Alkaline phosphatase i U/l (difference)
+blood_test_NPU19658,Lactate dehydrogenase i U/L
+blood_test_NPU19658_diff,Lactate dehydrogenase i U/L (difference)
+blood_test_NPU19673,Albumin i g/L
+blood_test_NPU19673_diff,Albumin i g/L (difference)
+blood_test_NPU19748,C-reactive protein i mg/L
+blood_test_NPU19748_diff,C-reactive protein i mg/L (difference)
+blood_test_NPU21533,Glucose i mmol/L
+blood_test_NPU21533_diff,Glucose i mmol/L (difference)
+blood_test_NPU22074,Glucose i mmol/L
+blood_test_NPU22074_diff,Glucose i mmol/L (difference)
+blood_test_NPU22111,Glucose i mmol/L
+blood_test_NPU22111_diff,Glucose i mmol/L (difference)
+blood_test_NPU26631,Metamyelocytes+Myelocytes+Promyelocytes i × 10<sup>9</sup>/L
+blood_test_NPU26631_diff,Metamyelocytes+Myelocytes+Promyelocytes i × 10<sup>9</sup>/L (difference)
+blood_test_NPU27300,N-(1-deoxyfructos-1-yl)haemoglobin beta chain i mmol/mol
+blood_test_NPU27300_diff,N-(1-deoxyfructos-1-yl)haemoglobin beta chain i mmol/mol (difference)
+blood_test_NPU27412,Glucose i mmol/L
+blood_test_NPU27412_diff,Glucose i mmol/L (difference)
+blood_test_NPU27783,Alkaline phosphatase i U/L
+blood_test_NPU27783_diff,Alkaline phosphatase i U/L (difference)
+vitals_bmi," ""BMI i kg.m<sup>-2</sup>"""
+vitals_bmi_diff," ""BMI i kg.m<sup>-2</sup>"" (difference)"
+RT_BWGC1,Konventionel ekstern strålebehandling
+RT_BWGC5,Individuel konform strålebehandling
+drug_prn0_A02BA02,ranitidin
+drug_prn0_A02BC05,esomeprazol
+drug_prn0_A03FA01,metoclopramid
+drug_prn0_A04AA01,ondansetron
+drug_prn0_A04AD12,aprepitant
+drug_prn0_B03BA01,cyanocobalamin
+drug_prn0_H02AB04,methylprednisolon
+drug_prn0_H02AB06,prednisolon
+drug_prn0_L01AA01,cyclophosphamid
+drug_prn0_L01BA04,pemetrexed
+drug_prn0_L01BC05,gemcitabin
+drug_prn0_L01CA02,vincristin
+drug_prn0_L01CA04,vinorelbin
+drug_prn0_L01CB01,etoposid
+drug_prn0_L01CD01,paclitaxel
+drug_prn0_L01CD02,docetaxel
+drug_prn0_L01DB01,doxorubicin
+drug_prn0_L01XA01,cisplatin
+drug_prn0_L01XA02,carboplatin
+drug_prn0_L01XC07,bevacizumab
+drug_prn0_L01XC17,nivolumab
+drug_prn0_L01XC18,pembrolizumab
+drug_prn0_L01XE03,erlotinib
+drug_prn0_L01XX17,topotecan
+drug_prn0_L03AA14,lipegfilgrastim
+drug_prn0_M05BA08,zoledronsyre
+drug_prn0_R06AA04,clemastin
+drug_prn1_A03FA01,metoclopramid (PRN)
+drug_prn1_A07DA03,loperamid (PRN)
+drug_prn1_N05BA06,lorazepam (PRN)
+surgery_KAAB00,Excision af intrakranielt patologisk væv
+surgery_KAAB10,Resektion af intrakranielt patologisk væv
+surgery_KGAA10,Indlæggelse af pleuradræn
+surgery_KGAA31,Torakoskopi
+surgery_KGAB10,Antero- eller posterolateral torakotomi
+surgery_KGDB10,Kileresektion af lunge
+surgery_KGDB11,Torakoskopisk kileresektion af lunge
+surgery_KGDC00,Lobektomi på lunge
+surgery_KGDC01,Torakoskopisk lobektomi på lunge
+surgery_KGEA00,Mediastinoskopi
+RT_BWGC1_cumul,Konventionel ekstern strålebehandling (cumulated overall)
+RT_BWGC5_cumul,Individuel konform strålebehandling (cumulated overall)
+drug_prn0_A02BA02_cumul,ranitidin (cumulated overall)
+drug_prn0_A02BC05_cumul,esomeprazol (cumulated overall)
+drug_prn0_A03FA01_cumul,metoclopramid (cumulated overall)
+drug_prn0_A04AA01_cumul,ondansetron (cumulated overall)
+drug_prn0_A04AD12_cumul,aprepitant (cumulated overall)
+drug_prn0_B03BA01_cumul,cyanocobalamin (cumulated overall)
+drug_prn0_H02AB04_cumul,methylprednisolon (cumulated overall)
+drug_prn0_H02AB06_cumul,prednisolon (cumulated overall)
+drug_prn0_L01AA01_cumul,cyclophosphamid (cumulated overall)
+drug_prn0_L01BA04_cumul,pemetrexed (cumulated overall)
+drug_prn0_L01BC05_cumul,gemcitabin (cumulated overall)
+drug_prn0_L01CA02_cumul,vincristin (cumulated overall)
+drug_prn0_L01CA04_cumul,vinorelbin (cumulated overall)
+drug_prn0_L01CB01_cumul,etoposid (cumulated overall)
+drug_prn0_L01CD01_cumul,paclitaxel (cumulated overall)
+drug_prn0_L01CD02_cumul,docetaxel (cumulated overall)
+drug_prn0_L01DB01_cumul,doxorubicin (cumulated overall)
+drug_prn0_L01XA01_cumul,cisplatin (cumulated overall)
+drug_prn0_L01XA02_cumul,carboplatin (cumulated overall)
+drug_prn0_L01XC07_cumul,bevacizumab (cumulated overall)
+drug_prn0_L01XC17_cumul,nivolumab (cumulated overall)
+drug_prn0_L01XC18_cumul,pembrolizumab (cumulated overall)
+drug_prn0_L01XE03_cumul,erlotinib (cumulated overall)
+drug_prn0_L01XX17_cumul,topotecan (cumulated overall)
+drug_prn0_L03AA14_cumul,lipegfilgrastim (cumulated overall)
+drug_prn0_M05BA08_cumul,zoledronsyre (cumulated overall)
+drug_prn0_R06AA04_cumul,clemastin (cumulated overall)
+drug_prn1_A03FA01_cumul,metoclopramid (PRN) (cumulated overall)
+drug_prn1_A07DA03_cumul,loperamid (PRN) (cumulated overall)
+drug_prn1_N05BA06_cumul,lorazepam (PRN) (cumulated overall)
+surgery_KAAB00_cumul,Excision af intrakranielt patologisk væv (cumulated overall)
+surgery_KAAB10_cumul,Resektion af intrakranielt patologisk væv (cumulated overall)
+surgery_KGAA10_cumul,Indlæggelse af pleuradræn (cumulated overall)
+surgery_KGAA31_cumul,Torakoskopi (cumulated overall)
+surgery_KGAB10_cumul,Antero- eller posterolateral torakotomi (cumulated overall)
+surgery_KGDB10_cumul,Kileresektion af lunge (cumulated overall)
+surgery_KGDB11_cumul,Torakoskopisk kileresektion af lunge (cumulated overall)
+surgery_KGDC00_cumul,Lobektomi på lunge (cumulated overall)
+surgery_KGDC01_cumul,Torakoskopisk lobektomi på lunge (cumulated overall)
+surgery_KGEA00_cumul,Mediastinoskopi (cumulated overall)
+RT_BWGC1_30d,Konventionel ekstern strålebehandling (cumulated over 30 days)
+RT_BWGC5_30d,Individuel konform strålebehandling (cumulated over 30 days)
+drug_prn0_A02BA02_30d,ranitidin (cumulated over 30 days)
+drug_prn0_A02BC05_30d,esomeprazol (cumulated over 30 days)
+drug_prn0_A03FA01_30d,metoclopramid (cumulated over 30 days)
+drug_prn0_A04AA01_30d,ondansetron (cumulated over 30 days)
+drug_prn0_A04AD12_30d,aprepitant (cumulated over 30 days)
+drug_prn0_B03BA01_30d,cyanocobalamin (cumulated over 30 days)
+drug_prn0_H02AB04_30d,methylprednisolon (cumulated over 30 days)
+drug_prn0_H02AB06_30d,prednisolon (cumulated over 30 days)
+drug_prn0_L01AA01_30d,cyclophosphamid (cumulated over 30 days)
+drug_prn0_L01BA04_30d,pemetrexed (cumulated over 30 days)
+drug_prn0_L01BC05_30d,gemcitabin (cumulated over 30 days)
+drug_prn0_L01CA02_30d,vincristin (cumulated over 30 days)
+drug_prn0_L01CA04_30d,vinorelbin (cumulated over 30 days)
+drug_prn0_L01CB01_30d,etoposid (cumulated over 30 days)
+drug_prn0_L01CD01_30d,paclitaxel (cumulated over 30 days)
+drug_prn0_L01CD02_30d,docetaxel (cumulated over 30 days)
+drug_prn0_L01DB01_30d,doxorubicin (cumulated over 30 days)
+drug_prn0_L01XA01_30d,cisplatin (cumulated over 30 days)
+drug_prn0_L01XA02_30d,carboplatin (cumulated over 30 days)
+drug_prn0_L01XC07_30d,bevacizumab (cumulated over 30 days)
+drug_prn0_L01XC17_30d,nivolumab (cumulated over 30 days)
+drug_prn0_L01XC18_30d,pembrolizumab (cumulated over 30 days)
+drug_prn0_L01XE03_30d,erlotinib (cumulated over 30 days)
+drug_prn0_L01XX17_30d,topotecan (cumulated over 30 days)
+drug_prn0_L03AA14_30d,lipegfilgrastim (cumulated over 30 days)
+drug_prn0_M05BA08_30d,zoledronsyre (cumulated over 30 days)
+drug_prn0_R06AA04_30d,clemastin (cumulated over 30 days)
+drug_prn1_A03FA01_30d,metoclopramid (PRN) (cumulated over 30 days)
+drug_prn1_A07DA03_30d,loperamid (PRN) (cumulated over 30 days)
+drug_prn1_N05BA06_30d,lorazepam (PRN) (cumulated over 30 days)
+surgery_KAAB00_30d,Excision af intrakranielt patologisk væv (cumulated over 30 days)
+surgery_KAAB10_30d,Resektion af intrakranielt patologisk væv (cumulated over 30 days)
+surgery_KGAA10_30d,Indlæggelse af pleuradræn (cumulated over 30 days)
+surgery_KGAA31_30d,Torakoskopi (cumulated over 30 days)
+surgery_KGAB10_30d,Antero- eller posterolateral torakotomi (cumulated over 30 days)
+surgery_KGDB10_30d,Kileresektion af lunge (cumulated over 30 days)
+surgery_KGDB11_30d,Torakoskopisk kileresektion af lunge (cumulated over 30 days)
+surgery_KGDC00_30d,Lobektomi på lunge (cumulated over 30 days)
+surgery_KGDC01_30d,Torakoskopisk lobektomi på lunge (cumulated over 30 days)
+surgery_KGEA00_30d,Mediastinoskopi (cumulated over 30 days)
+male,Male sex
+bl_comorb_CHF,CHF (baseline)
+bl_comorb_CKD,Moderate to severe CKD (baseline)
+bl_comorb_COPD,COPD (baseline)
+bl_comorb_CVA,CVA or TIA (baseline)
+bl_comorb_connect,Connective tissue disease (baseline)
+bl_comorb_diabetes1,Uncomplicated diabetes mellitus (baseline)
+bl_comorb_infarct,Myocardial infarction (baseline)
+bl_comorb_met,Metastasis (baseline)
+bl_comorb_ulcer,Peptic ulcer disease (baseline)
+bl_comorb_vascular,Peripheral vascular disease (baseline)
+bl_diag_DC18,Kræft i tyktarmen (baseline)
+bl_diag_DC44,Anden hudkræft (baseline)
+bl_diag_DC50,Brystkræft (baseline)
+bl_diag_DC61,Kræft i blærehalskirtlen (baseline)
+bl_diag_DC67,Kræft i urinblæren (baseline)
+bl_side_effect_anemia,Anemia (baseline)
+bl_side_effect_bact_inf,Bacterial infection (baseline)
+bl_side_effect_constip,Constipation (baseline)
+bl_side_effect_diarrhea,Diarrhea (baseline)
+bl_side_effect_pain,Pain (baseline)
+bl_side_effect_sleep_pb,Sleep problem (baseline)
+age,Age

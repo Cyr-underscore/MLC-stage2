@@ -1,0 +1,129 @@
+/* Variables CSS - CONSERVER LES COULEURS ORIGINALES 
+:root {
+  /* Variables conservées telles qu'elles étaient 
+}
+*/
+
+
+.patient-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.patient-overview {
+  width: 95%;
+  height: 95vh;
+  background-color: var(--patient-table-80); /* Conserver la couleur originale */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.patient-header h1 {
+  color: var(--text-header);
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.ai-summary-tab {
+  padding: 20px;
+}
+
+.ai-summary-content {
+  max-width: 100%;
+}
+
+.summary-text {
+  white-space: pre-wrap;
+  font-family: inherit;
+  line-height: 1.6;
+  background: linear-gradient(135deg, var(--header) 0%, var(--background) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #6f42c1;
+  font-size: 14px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  transition: all 0.3s ease;
+}
+
+.summary-text:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow-main)     /* old : rgba(111, 66, 193, 0.25)*/;
+  font-size: 18px;
+}
+
+.ai-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.ai-error {
+  text-align: center;
+  padding: 20px;
+}
+
+.retry-button, .regenerate-button, .generate-button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+}
+
+.retry-button:hover, .regenerate-button:hover, .generate-button:hover {
+  background-color: #5a2d91;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(111, 66, 193, 0.3);
+}
+
+.ai-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.model-info {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.ai-prompt {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .patient-container {
+    width: 95%;
+  }
+  
+  .patient-overview {
+    width: 100%;
+    padding: 10px;
+  }
+}

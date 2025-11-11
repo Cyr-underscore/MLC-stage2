@@ -1,0 +1,109 @@
+.patient-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.patient-table {
+  width: 95%;
+  height: 82%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 3%;
+}
+
+.patient-table::-webkit-scrollbar {
+  width: 8px;
+}
+
+.patient-table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.patient-table::-webkit-scrollbar-thumb {
+  background-color: var(--patient-table-80);
+  border-radius: 4px;
+}
+
+.patient-table::-webkit-scrollbar-thumb:hover {
+  background-color: var(--patient-table);
+}
+
+.patient-header h1 {
+  color: var(--prediction-background);
+  font-size: 22px;
+}
+
+.patient-overview {
+  width: 95%;
+  height: 100%;
+  background-color: var(--patient-table-80);
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  border-radius: 5px;
+} 
+
+.patient-info-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+.patient-info-table td,
+.patient-info-table th {
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.patient-info-table tr:first-child th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.patient-info-table tr:first-child th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.patient-info-table tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.patient-info-table tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.patient-info-table tbody tr:nth-child(odd) {
+  background-color: var(--table-background);
+}
+
+.patient-info-table tbody tr:nth-child(even) {
+  background-color: var(--table-background-alt);
+}
+
+.patient-info-table tr.header-table {
+  background-color: var(--patient-table);
+  color: white;
+  font-size: 16px;
+}
+
+.patient-info-table thead th {
+  border: 1px solid var(--patient-border);
+  background-color: var(--patient-table);
+}
+
+.patient-info-table tbody td {
+  border: 1px solid var(--patient-border);
+  font-size: 14px;
+}
+
+.patient-info-table tbody td:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}

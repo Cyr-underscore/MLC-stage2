@@ -1,0 +1,30 @@
+:root {
+    
+    --main: #403d39;
+    --patient-table: #917d9e;
+    --patient-table-dark: #757673;
+    --text-header: #e2d8e4;
+    --header: #dce1e2;
+    --background: #efd6fd;
+    --reset-button: #bfc0c0;
+    --table-background: #f6fcff;
+    --table-background-alt: #e8e8e8;
+    --prediction-background: #d8cedf;
+    --patient-border: #4a5653;
+    --shadow-main: rgba(133, 82, 228, 0.45);
+    --main-80: 
+ color-mix(in srgb, transparent, var(--main) 80%);
+    --reset-button-80: 
+ color-mix(in srgb, transparent, var(--reset-button) 80%);
+    --patient-table-80: 
+ color-mix(in srgb, transparent, var(--patient-table) 80%);
+    --header-95: 
+ color-mix(in srgb, transparent, var(--header) 95%);
+    --header-70: 
+ color-mix(in srgb, transparent, var(--header) 70%);
+    --orange: #b4612A;
+    --red: #e01818;
+    --orange-80: rgba(180, 97, 42, 0.8);
+    --sand: rgba(207, 198, 184, 1);
+
+}

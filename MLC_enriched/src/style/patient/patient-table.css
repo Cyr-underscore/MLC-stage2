@@ -1,0 +1,148 @@
+.patient-table {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.patient-info-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0;
+  table-layout: fixed;
+}
+
+.patient-info-table td,
+.patient-info-table th {
+  padding: 12px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: none;
+  box-sizing: border-box;
+  /* Transition plus rapide */
+  transition: all 0.15s ease-in-out;
+}
+
+/* Répartition des colonnes */
+.patient-info-table th:first-child,
+.patient-info-table td:first-child {
+  width: 60%;
+}
+
+.patient-info-table th:last-child,
+.patient-info-table td:last-child {
+  width: 40%;
+}
+
+/* En-tête fixe */
+.patient-info-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Styles des lignes - CONSERVER LES COULEURS ORIGINALES */
+.patient-info-table tbody tr:nth-child(odd) {
+  background-color: var(--table-background); /* Couleur originale */
+}
+
+.patient-info-table tbody tr:nth-child(even) {
+  background-color: var(--table-background-alt); /* Couleur originale */
+}
+
+.patient-info-table tr.header-table {
+  background-color: var(--patient-table); /* Couleur originale */
+  color: white;
+  font-size: 16px;
+}
+
+/* Bordures */
+.patient-info-table thead th {
+  border: 1px solid var(--patient-border); /* Couleur originale */
+  background-color: var(--patient-table); /* Couleur originale */
+  border-right: none;
+}
+
+.patient-info-table thead th:last-child {
+  border-right: 1px solid var(--patient-border); /* Couleur originale */
+}
+
+.patient-info-table tbody td {
+  border: 1px solid var(--patient-border); /* Couleur originale */
+  font-size: 14px;
+  border-right: none;
+  /* Transition spécifique pour les cellules */
+  transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.patient-info-table tbody td:last-child {
+  border-right: 1px solid var(--patient-border); /* Couleur originale */
+}
+
+.patient-info-table tbody td:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ANIMATIONS AU SURVOL - VERSION CORRIGÉE */
+.patient-info-table tbody tr:hover {
+  transform: scaleY(1.1); /* Scale uniquement sur l'axe Y */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  position: relative;
+}
+
+.patient-info-table tbody tr:hover td {
+  padding: 18px 10px; /* Padding vertical augmenté */
+  font-size: 18px; /* Taille de police maximale à 18px */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Effet de surbrillance spécifique pour chaque ligne selon sa couleur d'origine */
+.patient-info-table tbody tr:nth-child(odd):hover {
+  background-color: color-mix(in srgb, var(--table-background) 90%, white 10%);
+}
+
+.patient-info-table tbody tr:nth-child(even):hover {
+  background-color: color-mix(in srgb, var(--table-background-alt) 90%, white 10%);
+}
+
+/* Animation fluide pour l'agrandissement */
+.patient-info-table tbody tr {
+  transition: all 0.15s ease-in-out; /* Transition plus rapide */
+  transform-origin: center; /* Point d'origine au centre pour un scale Y propre */
+}
+
+/* Contrôles du tableau */
+.table-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.zero-filter-toggle {
+    margin-bottom: 0;
+}
+
+.toggle-button {
+    background: rgb(255, 223, 228);
+    border: 1px solid rgb(121, 98, 101);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.15s ease; /* Transition également ajustée */
+}
+
+.toggle-button:hover {
+    background: #afd7ee;
+    border-color: #747d86;
+}
+
+.toggle-button.active {
+    background: rgb(149, 235, 156);
+    color: white;
+    border-color: rgb(132, 209, 139);
+}

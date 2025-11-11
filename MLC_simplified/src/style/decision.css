@@ -1,0 +1,71 @@
+.decision-container {
+    width: 95%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ede0d4;
+    border-radius: 5px;
+}
+
+.decision-container h3 {
+  color: var(--main);
+  text-decoration: underline;
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  padding: 2%;
+}
+
+.disagree-button,
+.agree-button,
+.dk-button {
+    width: 20%;
+    height: auto;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+.agree-button {
+  background-color: transparent;
+  color: var(--main);
+  border: 2px solid var(--patient-border);
+  font-weight: bold;
+}
+
+.disagree-button {
+  background-color: transparent;
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  font-weight: bold;
+}
+
+.dk-button {
+  background-color: transparent;
+  color: var(--patient-table-dark);
+  border: 2px solid var(--patient-table-dark);
+  font-weight: bold;
+}
+
+.agree-button:hover{
+  background-color: var(--patient-border);
+  color: white;
+}
+
+.disagree-button:hover{
+  background-color: var(--orange);
+  color: white;
+}
+
+.dk-button:hover {
+  background-color: var(--patient-table-dark);
+  color: white;
+}
