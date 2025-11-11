@@ -81,7 +81,7 @@ cd MLC
 
 ```bash
 cd API
-pip install -r requirements.txt
+pip install -r requirements2.txt
 
 # In case you have a 1060 6Go this torch work :
 # other wise install the lastest driver of your gpu and found a compatible version of cuda and download the coresponding pytorch package.
