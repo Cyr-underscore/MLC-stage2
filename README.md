@@ -1,6 +1,9 @@
-# MLC
 
-This project provides an interactive visual interface to help clinicians understand **SHAP  (SHapley Additive exPlanations)** values and their influence on machine learning predictions.
+# MLC_Stage2
+
+This repo is base on an existing project from @anais-mez an the repo : https://github.com/anais-mez/MLC
+
+MLC provides an interactive visual interface to help clinicians understand **SHAP  (SHapley Additive exPlanations)** values and their influence on machine learning predictions.
 It  was developed as part of a research study to evaluate **wheter presentign SHAP explanations in a tailored interface could improve clinicians' understanding of model decisions and reduce overtrust** in AI systems.
 
 ## 📌 Table of Contents
@@ -65,7 +68,7 @@ MLC/
 
 ## ⚙️ Installation Instructions
 
-> ⚠️ **Python 3.11.9 is required** for the backend to work with current dependencies. Other version may cause incompatibilities with packages like SHAP and the model.
+> ⚠️ **Python 3.11 is required**, **3.11.9 is recommended** for the backend to work with current dependencies. Other version may cause incompatibilities with packages like SHAP and the model.
 
 ### 🔧 1. Clone the repository
 
@@ -79,6 +82,11 @@ cd MLC
 ```bash
 cd API
 pip install -r requirements.txt
+
+# In case you have a 1060 6Go this torch work :
+# other wise install the lastest driver of your gpu and found a compatible version of cuda and download the coresponding pytorch package.
+
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 
 # Run the API
 uvicorn main:app --reload
