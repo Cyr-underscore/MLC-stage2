@@ -73,7 +73,7 @@ MLC/
 ### 🔧 1. Clone the repository
 
 ```bash
-git clone https://github.com/anais-mez/MLC.git
+git clone https://github.com/Cyr-underscore/MLC-stage2.git
 cd MLC
 ```
 
