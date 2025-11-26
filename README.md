@@ -85,8 +85,9 @@ pip install -r requirements2.txt
 
 # In case you have a 1060 6Go this torch work :
 # other wise install the lastest driver of your gpu and found a compatible version of cuda and download the coresponding pytorch package.
+# Your GPU in case of CUDA use. your API of CUDA compatibility should be 6.2 or better.
 
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126  # compatible with 6.2 CUDA API
 
 # Run the API
 uvicorn main:app --reload
