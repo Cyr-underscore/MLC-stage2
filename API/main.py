@@ -22,9 +22,13 @@ import pandas as pd
 import os
 import socket
 import warnings
+
 from sklearn.impute import SimpleImputer
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-from AI_stuff import MedicalSummaryGenerator
+from AI_stuff import MedicalSummaryGenerator 
+
+import datetime
+from MouseTracking import MouseData
 
 
 warnings.filterwarnings("ignore")
@@ -35,7 +39,7 @@ app = FastAPI(title="Medical AI API", version="1.0")
 
 # Security
 security = HTTPBearer()
-API_TOKEN = "M58-L35-C62"
+API_TOKEN = "M58-L35-C62"   # have to change the way the tsx and the api connect this before production 
 
 def authenticate(credentials: HTTPAuthorizationCredentials = Depends(security)):
     """Simple token-based authentication"""
@@ -64,8 +68,8 @@ if __name__ == "__main__":
     import uvicorn
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
-    print(f"🌐 Access your API at http://{local_ip}:8000")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    print(f"🌐 Access your API at http://{local_ip}:8000")      # change the adress to a real adress variable of the server
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)     # make it callable from outside the server
 
 
 # -------------------- LOGGING ------------------------
@@ -307,7 +311,7 @@ summary_generator = MedicalSummaryGenerator(Big_LLM=True)
 ##--------------------------------------------------------------------##
 
 
-##----------------- endpont for the AI summary -----------------------##
+##----------------- endpoint for the AI summary -----------------------##
 
 @app.get("/medical-summary/{id_patient}")
 def get_medical_summary(id_patient: str, auth: HTTPAuthorizationCredentials = Depends(authenticate)):
@@ -324,9 +328,51 @@ def get_medical_summary(id_patient: str, auth: HTTPAuthorizationCredentials = De
         # Utilisation de l’instance globale
         text_summary = summary_generator.generate_medical_summary(patient_data)
 
-        return {"summary": text_summary}  # ← Texte brut dans la réponse JSON
+        return {"summary": text_summary}  # ← JSON response
 
     except Exception as e:
         import traceback
         traceback.print_exc()
         return {"error": f"Failed to generate medical summary: {str(e)}"}
+    
+@app.post("/api/mouse-tracking")
+async def track_mouse(
+    mouse_data: MouseData,
+    credentials: HTTPAuthorizationCredentials = Depends(security)
+):
+    """
+    Endpoint pour recevoir les données de tracking de souris
+    """
+    try:
+        # Charger les logs existants
+        actions_data = load_actions()
+        
+        # Créer un ID unique pour cette session
+        session_id = f"session_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        
+        # Sauvegarder les données
+        actions_data[session_id] = {
+            "timestamp": datetime.datetime.now().isoformat(),
+            "user": "authenticated_user",  # Vous pouvez récupérer l'utilisateur du token
+            "data": mouse_data.dict(),
+            "page": mouse_data.url,
+            "patient_id": mouse_data.url.split("/")[-1] if "patient" in mouse_data.url else None
+        }
+        
+        # Sauvegarder dans le fichier
+        save_actions(actions_data)
+        
+        print(f"📊 Mouse tracking data received: {mouse_data.dict()}")
+        
+        return {
+            "status": "success",
+            "message": "Mouse data saved successfully",
+            "session_id": session_id
+        }
+        
+    except Exception as e:
+        print(f"❌ Error saving mouse data: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error saving mouse data: {str(e)}"
+        )

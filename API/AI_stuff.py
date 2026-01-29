@@ -98,7 +98,7 @@ class MedicalSummaryGenerator:
 
             # Configuration spécifique au device
             if self.device == "cuda":
-                # Pour GTX 1060 6GB, on utilise 8-bit pour économiser la VRAM
+                # on utilise 8-bit pour économiser la VRAM
                 quant_config = BitsAndBytesConfig(load_in_8bit=True)
                 
                 model_kwargs = {

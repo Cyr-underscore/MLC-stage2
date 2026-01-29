@@ -38,6 +38,12 @@
   width: 100%;
 }
 
+.patient-title-borderring { 
+  -webkit-text-stroke: #000;
+  /*text-shadow: 1 1 2px #000, -1 1 2px #000, 1 -1 2px #000, -1 -1 2px #000; 
+  color: white;*/ 
+}   
+
 /* ===== SECTION RECHERCHE ===== */
 .patient-search {
   display: flex;

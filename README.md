@@ -92,6 +92,13 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 # Run the API
 uvicorn main:app --reload
 ```
+### 2.5 AI model specification
+
+# In order to make the AI model run corectly tweak the ''' trust_remote_code": True ''' line 86 in the AI_stuff.py file located in the API folder; set on false in case of failure.
+
+# If you want to change the LLM used go into the AI_stuff.py file line 65 and put the link to the model you want in the ''' model_options ''' list in first position.
+# You can use some model found on huggingface.co 
+
 
 By default, the API runs at:
 http://127.0.0.1:8000

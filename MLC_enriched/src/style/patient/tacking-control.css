@@ -1,0 +1,44 @@
+/* patient.css - ajouter à la fin */
+.tracking-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--cell-spe);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-main);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracking-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--button-spe);
+    cursor: pointer;
+    font-weight: 500;
+    transition: ease-in-out 1.2s;
+}
+
+.tracking-btn:hover {
+    background: var(--button-spe-reverse);
+}
+
+.tracking-btn.tracking-active {
+    transition: ease-in-out 1.2s;
+    background: var(--button-spe-reverse);
+    /* color: var(--main-80); */
+}
+
+.tracking-btn.tracking-active:hover {
+    background: var(--button-spe);
+    /* color: var(--main-80); */
+}
+
+.tracking-status {
+    font-size: 14px;
+    color: var(--main);
+}

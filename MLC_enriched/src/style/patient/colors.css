@@ -6,11 +6,17 @@
     --text-header: #e2d8e4;
     --header: #dce1e2;
     --background: #efd6fd;
+    --background-button-hover: #c1adcc;
+    --background-button-positive: #adccb4;
+    --button-spe: linear-gradient(90deg,rgba(133, 82, 228, 0.45) 0%, rgba(173, 204, 180, 1) 100%) ;
+    --button-spe-reverse: linear-gradient(90deg,rgba(173, 204, 180, 1) 100%), rgba(133, 82, 228, 0.45) 0% ;
+    --cell-spe:  linear-gradient(90deg, var(--background) 0%, rgba(199, 177, 227, 1) 100%);
     --reset-button: #bfc0c0;
     --table-background: #f6fcff;
     --table-background-alt: #e8e8e8;
     --prediction-background: #d8cedf;
     --patient-border: #4a5653;
+    --shadow-header: rgba(0, 36, 102, 0.678);
     --shadow-main: rgba(133, 82, 228, 0.45);
     --main-80: 
  color-mix(in srgb, transparent, var(--main) 80%);
@@ -24,7 +30,7 @@
  color-mix(in srgb, transparent, var(--header) 70%);
     --orange: #b4612A;
     --red: #e01818;
+    --red-spe : linear-gradient(90deg, var(--background) 0%, rgb(253, 184, 180) 100%);
     --orange-80: rgba(180, 97, 42, 0.8);
     --sand: rgba(207, 198, 184, 1);
-
 }

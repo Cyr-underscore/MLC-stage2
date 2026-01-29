@@ -1,16 +1,18 @@
 import SearchBar from "./components/Searchbar"
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { fetchPatientVitals } from "./utils/api_getVitals";
-import { fetchMedicalSummary } from "./utils/api_getMedicalSummary"; 
+import { fetchMedicalSummary } from "./utils/api_getMedicalSummary";
+import { useMouseTracking } from "./hooks/useMouseTracking";
 import Loader from "./components/Loader";
-//import "./style/patient.css";
-// Remplacer l'import unique par les imports séparés
+//import "./style/patient.css"; old css
+
 
 import "./style/patient/patient.css";
 import "./style/patient/patient-table.css";
 import "./style/patient/patient-tabs.css";
 import "./style/patient/patient-search.css";
 import "./style/patient/colors.css";
+import "./style/patient/tacking-control.css";
 
 type PatientVitals = {
     [key: string]: string | number | null;
@@ -19,6 +21,12 @@ type PatientVitals = {
 type Props = {
     selectedPatientId: string;
 };
+
+// Type guard pour vérifier si c'est un MouseEvent
+const isMouseEvent = (event: Event): event is MouseEvent => {
+    return 'clientX' in event && 'clientY' in event;
+};
+
 
 export default function Patient({ selectedPatientId }: Props) {
     const [vitals, setVitals] = useState<PatientVitals | null>(null);
@@ -30,6 +38,58 @@ export default function Patient({ selectedPatientId }: Props) {
     const [aiLoading, setAiLoading] = useState<boolean>(false); 
     const [aiError, setAiError] = useState<string | null>(null);
     
+    const trackingAreaRef = useRef<HTMLDivElement>(null);
+    
+    // Récupérer le token depuis localStorage
+    const token = localStorage.getItem("token");
+    
+    // Initialiser le tracking - activé par défaut
+    const { 
+        isTracking, 
+        startTracking, 
+        stopTracking, 
+        toggleTracking 
+    } = useMouseTracking(true, token);
+    
+    // Gérer le tracking seulement dans la zone spécifique
+    useEffect(() => {
+        if (!trackingAreaRef.current || !isTracking) return;
+        
+        const handleMouseEvent = (event: Event) => {
+            // Vérifier que c'est bien un MouseEvent
+            if (!isMouseEvent(event)) return;
+            
+            // Vérifier si l'événement est dans la zone de tracking
+            if (trackingAreaRef.current?.contains(event.target as Node)) {
+                // Créer un événement personnalisé pour le hook
+                const customEvent = new CustomEvent('custom-mouse-event', {
+                    detail: { originalEvent: event }
+                });
+                document.dispatchEvent(customEvent);
+            }
+        };
+        
+        // Utiliser une assertion
+        const events: (keyof DocumentEventMap)[] = [
+            'mousemove' as const, 
+            'click' as const, 
+            'mousedown' as const, 
+            'mouseup' as const
+        ];
+        
+        events.forEach(eventType => {
+            document.addEventListener(eventType, handleMouseEvent as EventListener);
+        });
+        
+        return () => {
+            events.forEach(eventType => {
+                document.removeEventListener(eventType, handleMouseEvent as EventListener);
+            });
+        };
+    }, [isTracking]);
+
+
+
     useEffect(() => {
         const token = localStorage.getItem("token");
         fetchPatientVitals(selectedPatientId, token)
@@ -258,8 +318,20 @@ export default function Patient({ selectedPatientId }: Props) {
                                     className={`toggle-button ${showZeroValues ? 'active' : ''}`}
                                     onClick={() => setShowZeroValues(!showZeroValues)}
                                 >
-                                    {showZeroValues ? '✅' : '❌'} Zero Values: {showZeroValues ? 'Shown' : 'Hidden'}
+                                    {showZeroValues ? '✅' : '❌'} Zero Values: {showZeroValues ? 'Shown' : 'Hidden'} |►◄| Press to {showZeroValues ? 'hide' : 'show'} values == 0.
                                 </button>
+                            </div>
+
+                            <div className="tracking-controls">
+                                <button 
+                                    onClick={toggleTracking}
+                                    className={`tracking-btn ${isTracking ? 'tracking-active' : ''}`}
+                                    >
+                                    {isTracking ? '🟢 Tracking ON' : '🔴 Tracking OFF'}
+                                    </button>
+                                <span className="tracking-status">
+                                    Mouse tracking: {isTracking ? 'Active' : 'Inactive'}
+                                </span>
                             </div>
                         </div>
                         
@@ -394,7 +466,7 @@ export default function Patient({ selectedPatientId }: Props) {
         <div className="patient-container">
             <div className="patient-overview">
                 <div className="patient-header">
-                    <h1>Patient {selectedPatientId}: Overview</h1>
+                    Patient {selectedPatientId}: Overview
                 </div>
                 
                 <div className="patient-search">
